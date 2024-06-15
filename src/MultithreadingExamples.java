@@ -30,5 +30,19 @@ public class MultithreadingExamples {
 		//groupname - where the thread was launched from. when ever you create a thread it attaches a group to it. 
 		//priority - elite customer should be attended or first asap.
 
+		
+		//Difference between thread.run() and thread.start()
+		
+		//When a program calls the start() method, a new thread is created and then the run() 
+		//method is executed. But if we directly call the run() method then no new thread will 
+		//be created and run() method will be executed as a normal method call on the current 
+		//calling thread itself and no multi-threading will take place.
+		
+		//In Java’s multi-threading concept, another most important difference between start() 
+		//and run() method is that we can’t call the start() method twice otherwise it will throw
+		//an IllegalStateException whereas run() method can be called multiple times as it is 
+		//just a normal method calling. 
+		
+		
 	}
 }

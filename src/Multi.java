@@ -13,6 +13,19 @@ public class Multi extends Thread{
 	public void run(){  
 		System.out.println("thread is running...");  
 		}  
+
+//	When you override the run method in the Multi class, the run method in the Multi class 
+//	will be executed when you call the start method on an instance of Multi. This is due to the 
+//	dynamic method dispatch (runtime polymorphism) in Java, which ensures that the overridden 
+//	method in the subclass is executed, even if it is called from a method in the superclass.
+//	Dynamic Method Dispatch: Java determines which method to call at runtime based on the actual 
+//	object's type, not the reference type.
+//	
+//	Overriding Methods: When a method in a subclass overrides a method in the superclass, the
+//	overridden method is called on the subclass instance.
+//	Superclass Methods Calling Overridden Methods: When a superclass method calls an overridden 
+//	method, the method defined in the subclass will be executed if the instance is of the 
+//	subclass.
 	
 //	 In Java, any code that needs to run concurrently with the main program 
 //	 should be put inside the run() method. This method is a key part of 
@@ -31,6 +44,7 @@ public class Multi extends Thread{
 //as a static method in its superclass, it hides the superclass method rather than 
 //overriding it. This means that the subclass method does not replace the superclass
 //method in the inheritance hierarchy; instead, it simply hides it.
+//Check more on this..
 
 //t1.start() is used to start the execution of the thread t1, while t1.run()
 //would directly call the run() method on the t1 object without starting a new thread.

@@ -2,8 +2,10 @@
 public class ThreadCreation{
 	//We can create user defined threads in 2 ways:
 	//1. Runnable Interface.
+		 //Runnable is a Functional Interface.
 	//2. by extending thread class.
 	//we can use both but using runnable interface leverages us to acheive multiple inheritance.
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
