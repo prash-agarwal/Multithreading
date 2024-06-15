@@ -1,29 +1,23 @@
-package Synchronization;
+package Synchronization;                  
 
-public class MyThread extends Thread{
+public class MyThread extends Thread{     
 	
-	
-	private boolean isDeposit;
-	private Double amount;
-	private BankAccount bankAccount;
+	private boolean isDeposit;            
+	private Double amount;                
+	private BankAccount bankAccount;      
 	
 	MyThread(boolean isDeposit, Double amount, BankAccount bankAccount){
 		
-		this.isDeposit = isDeposit;
-		this.amount = amount;
-		this.bankAccount = bankAccount;
+		this.isDeposit = isDeposit;       
+		this.amount = amount;              
+		this.bankAccount = bankAccount;     
 	}
-	
-	
 	
 	@Override
 	public void run() {
 		
 		//Entry section
 		System.out.println("Inside run method : Mythread");
-		
-		
-		
 		synchronized(bankAccount) { //CRITICAL SECTION - One thread can access this at any given
 			//point of time.
 			
@@ -40,15 +34,8 @@ public class MyThread extends Thread{
 		}else {
 			bankAccount.deductBalance(this.amount);
 		}
-		
 		}
-		
 		//Remainder section
-		
 		System.out.println("Inside run method : Mythread23 remainder ");
-		
-
 	}
-
-	
 }

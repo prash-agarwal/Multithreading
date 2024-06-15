@@ -1,6 +1,4 @@
 package Synchronization;
-
-
 public class BankAccount {
 
 	private int id;
