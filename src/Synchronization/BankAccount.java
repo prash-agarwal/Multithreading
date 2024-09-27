@@ -42,8 +42,5 @@ public class BankAccount {
 
 	public void deductBalance(Double amount) {
 		this.balance -= amount;
-		
-
 	}
-
 }

@@ -43,6 +43,13 @@ public class MultithreadingExamples {
 		//an IllegalStateException whereas run() method can be called multiple times as it is 
 		//just a normal method calling. 
 		
+		//When you create a subclass of Thread but do not override the run() method, starting the
+		//thread will simply invoke the default run() method provided by the Thread class.
+		
+		//If you create a subclass of Thread and do not override the run() method, starting the 
+		//thread will not execute any user-defined code because the default run() method does 
+		//nothing.
+		
 		
 	}
 }

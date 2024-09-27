@@ -41,9 +41,6 @@ public class FactorialExamples {
 		System.out.println("Bhai");
 		
 		
-		
-		
-		
 		long endTime = System.currentTimeMillis();
 		
 		long startTimeParallel = System.currentTimeMillis();

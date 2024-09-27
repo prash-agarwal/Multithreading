@@ -20,7 +20,8 @@ public class Multi extends Thread{
 //	method in the subclass is executed, even if it is called from a method in the superclass.
 //	Dynamic Method Dispatch: Java determines which method to call at runtime based on the actual 
 //	object's type, not the reference type.
-//	
+//	Question : but run() method is not present in Thread class.
+	
 //	Overriding Methods: When a method in a subclass overrides a method in the superclass, the
 //	overridden method is called on the subclass instance.
 //	Superclass Methods Calling Overridden Methods: When a superclass method calls an overridden 

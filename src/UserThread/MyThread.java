@@ -26,10 +26,8 @@ public class MyThread extends Thread {
 	}
 
 	int costOfRent(int rateOfDay,int noOfDays, Book book) {
-		
 		int cost=rateOfDay*noOfDays;
 		cost=cost+book.getBookPrice();
 		return cost;
-	}
-	
+	}	
 }

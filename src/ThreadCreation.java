@@ -4,7 +4,8 @@ public class ThreadCreation{
 	//1. Runnable Interface.
 		 //Runnable is a Functional Interface.
 	//2. by extending thread class.
-	//we can use both but using runnable interface leverages us to acheive multiple inheritance.
+	//we can use both but using runnable interface leverages us to acheive multiple inheritance
+	//and making the application Loosely Coupled.
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -19,7 +20,7 @@ public class ThreadCreation{
 //		that instance to create an instance of InnerClass (inner). After creating the 
 //		inner object, you can use it as needed.
 
-	
+	//To create object of Inner Class, We need to create object of main Class First.
 		ThreadCreation obj=new ThreadCreation();
 		MyThread thread=obj.new MyThread();
 		//starting the thread
